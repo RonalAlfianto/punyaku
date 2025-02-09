@@ -1,0 +1,14 @@
+proxies:
+  - name: 2-10
+    server: zaintest.vuclip.com
+    port: 443
+    type: trojan
+    password: 30bdf250-e706-11ef-af89-1239d0255272
+    skip-cert-verify: true
+    sni: sg3.6n6.net
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg3.6n6.net
+    udp: true
