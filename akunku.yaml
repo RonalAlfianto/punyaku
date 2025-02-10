@@ -12,3 +12,16 @@ proxies:
       headers: 
         Host: sg3.6n6.net
     udp: true
+- name: asw
+  server: 157.230.255.206/df.game.naver.com
+  port: 443
+  type: trojan
+  password: mekiii
+  network: ws
+  sni: dexzspg.whyvpnmixuejiez.online
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /PATH
+    headers:
+        Host: dexzspg.whyvpnmixuejiez.online
