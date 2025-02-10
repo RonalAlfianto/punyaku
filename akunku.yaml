@@ -1,27 +1,43 @@
 proxies:
-  - name: 2-10
-    server: zaintest.vuclip.com
+  - name: trial-eb03w 3
+    server: cache.netflix.com
+    type: vless
     port: 443
-    type: trojan
-    password: 30bdf250-e706-11ef-af89-1239d0255272
+    uuid: 0a8e5e9a-726a-4a72-83a1-8634b5003332
+    tls: true
     skip-cert-verify: true
-    sni: sg3.6n6.net
+    servername: cache.netflix.com.sg-d7.vmess.live
     network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg3.6n6.net
+    ws-opts:
+      path: /vless
+      headers:
+        Host: cache.netflix.com.sg-d7.vmess.live
     udp: true
-- name: asw
-  server: 157.230.255.206/df.game.naver.com
-  port: 443
-  type: trojan
-  password: mekiii
-  network: ws
-  sni: dexzspg.whyvpnmixuejiez.online
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /PATH
-    headers:
-        Host: dexzspg.whyvpnmixuejiez.online
+  - name: trial-eb03w 4
+    server: ava.game.naver.com
+    type: vless
+    port: 443
+    uuid: 0a8e5e9a-726a-4a72-83a1-8634b5003332
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.sg-d7.vmess.live
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: ava.game.naver.com.sg-d7.vmess.live
+    udp: true
+  - name: trial-eb03w 5
+    server: zaintest.vuclip.com
+    type: vless
+    port: 443
+    uuid: 0a8e5e9a-726a-4a72-83a1-8634b5003332
+    tls: true
+    skip-cert-verify: true
+    servername: zaintest.vuclip.com.sg-d7.vmess.live
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: zaintest.vuclip.com.sg-d7.vmess.live
+    udp: true
